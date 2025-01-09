@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepatu App</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                }).catch((error) => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Sepatu App</h1>
+    </header>
+    <main>
+        <section id="product-list">
+            <h2>Daftar Sepatu</h2>
+            <div class="product">
+                <img src="sepatu1.jpeg" alt="Sepatu 1">
+                <h3>Sepatu Olahraga</h3>
+                <p>Harga: Rp 500.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="sepatu2.jpeg" alt="Sepatu 2">
+                <h3>Sepatu Kasual</h3>
+                <p>Harga: Rp 400.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sepatu App. Semua hak dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
