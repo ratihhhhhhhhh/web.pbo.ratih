@@ -20,6 +20,12 @@
         function showAlert(productName) {
             alert('Anda telah memilih untuk membeli: ' + productName);
         }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Pesan Anda telah dikirim!');
+            document.getElementById('form').reset();
+        }
     </script>
 </head>
 <body>
@@ -30,49 +36,49 @@
         <section id="product-list">
             <h2>Daftar Sepatu</h2>
             <div class="product">
-                <img src="sepatu1.jpg" alt="Sepatu 1">
+                <img src="sepatu1.jpeg" alt="Sepatu Olahraga">
                 <h3>Sepatu Olahraga</h3>
                 <p>Harga: Rp 500.000</p>
                 <button onclick="showAlert('Sepatu Olahraga')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu2.jpg" alt="Sepatu 2">
+                <img src="sepatu2.jpeg" alt="Sepatu Kasual">
                 <h3>Sepatu Kasual</h3>
                 <p>Harga: Rp 400.000</p>
                 <button onclick="showAlert('Sepatu Kasual')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu3.jpg" alt="Sepatu 3">
+                <img src="sepatu3.jpeg" alt="Sepatu Formal">
                 <h3>Sepatu Formal</h3>
                 <p>Harga: Rp 600.000</p>
                 <button onclick="showAlert('Sepatu Formal')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu4.jpg" alt="Sepatu 4">
+                <img src="sepatu4.jpeg" alt="Sepatu Hiking">
                 <h3>Sepatu Hiking</h3>
                 <p>Harga: Rp 750.000</p>
                 <button onclick="showAlert('Sepatu Hiking')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu5.jpg" alt="Sepatu 5">
+                <img src="sepatu5.jpeg" alt="Sepatu Sneakers">
                 <h3>Sepatu Sneakers</h3>
                 <p>Harga: Rp 550.000</p>
                 <button onclick="showAlert('Sepatu Sneakers')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu6.jpg" alt="Sepatu 6">
+                <img src="sepatu6.jpeg" alt="Sepatu Boot">
                 <h3>Sepatu Boot</h3>
                 <p>Harga: Rp 800.000</p>
                 <button onclick="showAlert('Sepatu Boot')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu7.jpg" alt="Sepatu 7">
+                <img src="sepatu7.jpeg" alt="Sepatu Sandal">
                 <h3>Sepatu Sandal</h3>
                 <p>Harga: Rp 300.000</p>
                 <button onclick="showAlert('Sepatu Sandal')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu8.jpg" alt="Sepatu 8">
+                <img src="sepatu8.jpeg" alt="Sepatu Slip-On">
                 <h3>Sepatu Slip-On</h3>
                 <p>Harga: Rp 450.000</p>
                 <button onclick="showAlert('Sepatu Slip-On')">Beli Sekarang</button>
@@ -87,7 +93,4 @@
                 <input type="text" id="name" name="name" required>
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message
+                <input type="email"
