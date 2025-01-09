@@ -34,54 +34,54 @@
     </header>
     <main>
         <section id="product-list">
-            <h2>DaftarSepatu</h2>
+            <h2>Daftar Sepatu</h2>
             <div class="product">
-                <img src="sepatu1.jpeg" alt="SepatuOlahraga">
+                <img src="sepatu1.jpeg" alt="Sepatu Olahraga">
                 <h3>Sepatu Olahraga</h3>
                 <p>Harga: Rp 500.000</p>
-                <button onclick="showAlert('SepatuOlahraga')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Olahraga')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu2.jpeg" alt="SepatuKasual">
+                <img src="sepatu2.jpeg" alt="Sepatu Kasual">
                 <h3>Sepatu Kasual</h3>
                 <p>Harga: Rp 400.000</p>
-                <button onclick="showAlert('SepatuKasual')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Kasual')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu3.jpeg" alt="SepatuFormal">
-                <h3>SepatuFormal</h3>
+                <img src="sepatu3.jpeg" alt="Sepatu Formal">
+                <h3>Sepatu Formal</h3>
                 <p>Harga: Rp 600.000</p>
-                <button onclick="showAlert('SepatuFormal')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Formal')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu4.jpeg" alt="SepatuHiking">
-                <h3>SepatuHiking</h3>
+                <img src="sepatu4.jpeg" alt="Sepatu Hiking">
+                <h3>Sepatu Hiking</h3>
                 <p>Harga: Rp 750.000</p>
-                <button onclick="showAlert('SepatuHiking')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Hiking')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu5.jpeg" alt="SepatuSneakers">
+                <img src="sepatu5.jpeg" alt="Sepatu Sneakers">
                 <h3>Sepatu Sneakers</h3>
                 <p>Harga: Rp 550.000</p>
-                <button onclick="showAlert('SepatuSneakers')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Sneakers')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu6.jpeg" alt="SepatuBoot">
-                <h3>SepatuBoot</h3>
+                <img src="sepatu6.jpeg" alt="Sepatu Boot">
+                <h3>Sepatu Boot</h3>
                 <p>Harga: Rp 800.000</p>
-                <button onclick="showAlert('SepatuBoot')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Boot')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu7.jpeg" alt="SepatuSandal">
-                <h3>SepatuSandal</h3>
+                <img src="sepatu7.jpeg" alt="Sepatu Sandal">
+                <h3>Sepatu Sandal</h3>
                 <p>Harga: Rp 300.000</p>
-                <button onclick="showAlert('SepatuSandal')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Sandal')">Beli Sekarang</button>
             </div>
             <div class="product">
-                <img src="sepatu8.jpeg" alt="SepatuSlip-On">
-                <h3>SepatuSlip-On</h3>
+                <img src="sepatu8.jpeg" alt="Sepatu Slip-On">
+                <h3>Sepatu Slip-On</h3>
                 <p>Harga: Rp 450.000</p>
-                <button onclick="showAlert('SepatuSlip-On')">Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Slip-On')">Beli Sekarang</button>
             </div>
             <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
         </section>
@@ -91,7 +91,16 @@
             <form id="form" onsubmit="handleSubmit(event)">
                 <label for="name">Nama:</label>
                 <input type="text" id="name" name="name" required>
-                
+
                 <label for="email">Email:</label>
-                <input type="email"
-                    
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
