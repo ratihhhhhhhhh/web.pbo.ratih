@@ -16,6 +16,10 @@
                 });
             });
         }
+
+        function showAlert(productName) {
+            alert('Anda telah memilih untuk membeli: ' + productName);
+        }
     </script>
 </head>
 <body>
@@ -29,20 +33,47 @@
                 <img src="sepatu1.jpeg" alt="Sepatu 1">
                 <h3>Sepatu Olahraga</h3>
                 <p>Harga: Rp 500.000</p>
-                <button>Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Olahraga')">Beli Sekarang</button>
             </div>
             <div class="product">
                 <img src="sepatu2.jpeg" alt="Sepatu 2">
                 <h3>Sepatu Kasual</h3>
                 <p>Harga: Rp 400.000</p>
-                <button>Beli Sekarang</button>
+                <button onclick="showAlert('Sepatu Kasual')">Beli Sekarang</button>
             </div>
             <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+        </section>
+
+        <section id="contact-form">
+            <h2>Hubungi Kami</h2>
+            <form id="form" onsubmit="handleSubmit(event)">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2023 Sepatu App. Semua hak dilindungi.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Mencegah pengiriman form
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert(`Terima kasih, ${name}! Pesan Anda telah dikirim.`);
+            // Di sini Anda bisa menambahkan logika untuk mengirim data ke server
+            document.getElementById('form').reset(); // Mengosongkan form setelah pengiriman
+        }
+    </script>
 </body>
 </html>
